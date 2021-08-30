@@ -1,12 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
-  padding: 0;
-  background: #111725;
   padding: 30px;
+  background: #111725;
   font-family: sans-serif;
+  font-family: "Quicksand", sans-serif;
+  height: 100vh;
 }
 .logo {
   display: flex;
@@ -24,28 +26,98 @@ body {
   margin-right: 8px;
 }
 .container {
+  width: 100%;
+  inset: 0;
+  padding: 20px 80px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 0 0 0 100px;
   position: relative;
 }
 .main {
   background: #5acba4;
-  width: 750px;
+  width: 700px;
+  height: 466px;
   margin-top: 50px;
+  right: 0;
 }
 .man {
   width: 100%;
   mix-blend-mode: luminosity;
 }
+.man img {
+  width: 200px;
+}
 .info {
+  /* visibility: hidden; */
   position: absolute;
   bottom: 0;
+  height: 400px;
   background: #111725;
-  width: 750px;
+  width: 700px;
   color: #ffffff;
+  padding-top: 10px;
 }
 .info h1 span {
   color: #5acba4;
+}
+.info h1 {
+  letter-spacing: 1px;
+  font-size: 2.5em;
+}
+.info p {
+  color: #999;
+}
+.email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c344b;
+  width: 400px;
+  padding: 5px 0 5px 15px;
+  border-radius: 20px;
+  position: relative;
+  margin: 40px 0;
+}
+.email input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #999;
+  font-size: 16px;
+  width: 60%;
+  position: relative;
+}
+.error {
+  position: absolute;
+  bottom: -20px;
+  color: #e55039;
+}
+.email button {
+  background: #5acba4;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 5px;
+  border-radius: 20px;
+}
+.links {
+  color: #999;
+  font-size: 1.2rem;
+  margin: 40px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+.links span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.title {
+  font-size: 12px;
+  width: 50px;
+}
+.links i {
+  margin-right: 5px;
 }
