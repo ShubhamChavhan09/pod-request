@@ -32,25 +32,23 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  position: relative;
+  /* position: relative; */
 }
 .main {
   background: #5acba4;
   width: 700px;
   height: 466px;
   margin-top: 50px;
-  right: 0;
+  position: relative;
 }
 .man {
   width: 100%;
   mix-blend-mode: luminosity;
 }
-.man img {
-  width: 200px;
-}
 .info {
   /* visibility: hidden; */
   position: absolute;
+  left: -400px;
   bottom: 0;
   height: 400px;
   background: #111725;
@@ -120,4 +118,34 @@ body {
 }
 .links i {
   margin-right: 5px;
+}
+
+@media (max-width: 1020px) {
+  .logo {
+    margin: 0 auto;
+  }
+  .container {
+    width: 90%;
+    min-width: 400px;
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .main {
+    margin: 0;
+    width: 100%;
+    background: none;
+  }
+  .man {
+    visibility: hidden;
+  }
+
+  .info {
+    position: absolute;
+    width: 100%;
+    inset: 0;
+  }
 }
